@@ -71,19 +71,10 @@
         
     </RelativeLayout>
     
-    <TextView
-	    android:id="@+id/map_license"
-	    android:layout_width="fill_parent"
-	    android:layout_height="wrap_content"
-	    android:textSize="11sp"
-	    android:layout_alignParentBottom="true"
-	    android:gravity="center_horizontal" />
-      
     <org.osmdroid.views.MapView
         android:id="@+id/map_mapview"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_below="@id/test_area" 
-        android:layout_above="@id/map_license" />
+        android:layout_below="@id/test_area" />
 
 </RelativeLayout>

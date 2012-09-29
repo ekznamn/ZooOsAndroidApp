@@ -196,21 +196,8 @@ public class MapActivity extends Activity
 		
 		//------------------------------------------------------------------
 		
-		
-		
 	    buildMap();
 	    updateTopic();
-		
-	    // set text for license below map
-		TextView tv_license = (TextView) findViewById(R.id.map_license);
-		tv_license.setText(Html.fromHtml(
-				"Daten von <a href=\"http://www.openstreetmap.org\">" +
-				"OpenStreetMap</a> - veröffentlicht unter " +
-				"<a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">" +
-				"CC-BY-SA 2.0</a>"));
-		tv_license.setMovementMethod(LinkMovementMethod.getInstance());
-		
-		
 	} 
 	
 	/**
@@ -404,7 +391,7 @@ public class MapActivity extends Activity
 	    		}
 	    	});
 	    	
-	    	progress_dialog = ProgressDialog.show(this, "", "Warte auf GPS...", 
+	    	progress_dialog = ProgressDialog.show(this, "", getResources().getText(R.string.dialog_wait_gps), 
 	    										  true, false);
 	    	progress_dialog.setCancelable(true);
 	    	
@@ -451,7 +438,8 @@ public class MapActivity extends Activity
     		}
     	});
     	
-    	progress_dialog = ProgressDialog.show(this, "", "Laden...", 
+    	progress_dialog = ProgressDialog.show(this, "", 
+    							getResources().getText(R.string.dialog_loading), 
     										  true, false);
     	progress_dialog.setCancelable(false);
     	
@@ -473,7 +461,8 @@ public class MapActivity extends Activity
 //    			CopyOfHTTPRequestHandler http = new CopyOfHTTPRequestHandler();
     			HTTPRequestHandler http = new HTTPRequestHandler();
     			try {
-    				animal_data = http.sendGet("alt/get_animals.php?topic_id=" + topic_id);
+    				animal_data = http.sendGet("alt/get_animals.php?topic_id=" 
+    											+ topic_id);
     			} catch (HTTPRequestException e) {
     				topic_id = -1;
     				e.printStackTrace();
@@ -504,7 +493,7 @@ public class MapActivity extends Activity
     		}
     	});
     	progress_dialog = ProgressDialog.show(this, "", 
-    										  "Daten werden geladen...", 
+    						getResources().getText(R.string.dialog_loading_data), 
     										  true, false);
     	progress_dialog.setCancelable(true);
     	
@@ -526,11 +515,10 @@ public class MapActivity extends Activity
 		// dialog that is shown, if GPS is disabled
 		case DIALOG_GPS_DISABLED:
 			dialog = new AlertDialog.Builder(this)
-					.setTitle("GPS ist deaktiviert")
-					.setMessage("Schalte es ein, damit " +
-							"dein aktueller Standort ermittelt werden kann.")
+					.setTitle(R.string.dialog_no_gps)
+					.setMessage(R.string.dialog_gps_msg)
 					.setCancelable(false)
-					.setPositiveButton("GPS einstellen", 
+					.setPositiveButton(R.string.dialog_set_gps, 
 					 new DialogInterface.OnClickListener() {
 						public void onClick(DialogInterface dialog, int id) {
 	
@@ -539,7 +527,7 @@ public class MapActivity extends Activity
 							startActivityForResult(intent, 0);
 						}
 					})
-			       .setNegativeButton("Abbrechen", 
+			       .setNegativeButton(R.string.cancel, 
 				    		new DialogInterface.OnClickListener() {
 			           	public void onClick(DialogInterface dialog, int id) {
 			           		dialog.cancel();
@@ -554,10 +542,10 @@ public class MapActivity extends Activity
 //			final View image = inflater.inflate(R.layout.animal_dialog, 
 //												   null);
 			dialog = new AlertDialog.Builder(this)
-					.setMessage("Tier Info")
+					.setMessage(R.string.dialog_animal_info)
 //					.setView(image)
 					.setCancelable(true)
-					.setPositiveButton("Details", 
+					.setPositiveButton(R.string.dialog_details, 
 					 new DialogInterface.OnClickListener() {
 						public void onClick(DialogInterface dialog, int id) {
 		
@@ -573,8 +561,7 @@ public class MapActivity extends Activity
 		// dialog that is shown when an error occurs
 		case DIALOG_ERROR:
 			dialog = new AlertDialog.Builder(this)
-					.setMessage("Verbindungsfehler - Die Daten konnten nicht " +
-								"übertragen werden.")
+					.setMessage(R.string.dialog_connect_error)
 					.setCancelable(true)
 					.setPositiveButton("OK", 
 					 new DialogInterface.OnClickListener() {
@@ -586,19 +573,17 @@ public class MapActivity extends Activity
 		// dialog that is shown when the user presses the back key
 		case DIALOG_QUIT:
 			dialog = new AlertDialog.Builder(this)
-					.setTitle("Anwendung verlassen")
-					.setMessage("Soll die Anwendung wirklich beendet werden?" +
-								"\nBisherige Fortschritte werden nicht " +
-								"gespeichert und gehen verloren.")
+					.setTitle(R.string.dialog_exit)
+					.setMessage(R.string.dialog_exit_msg)
 					.setCancelable(true)
-					.setPositiveButton("Ja", 
+					.setPositiveButton(R.string.yes, 
 					 new DialogInterface.OnClickListener() {
 						public void onClick(DialogInterface dialog, int id) {
 		
 							MapActivity.this.finish();
 						}
 					})
-					.setNegativeButton("Nein", 
+					.setNegativeButton(R.string.no, 
 					 new DialogInterface.OnClickListener() {
 						public void onClick(DialogInterface dialog, int id) {
 							dialog.cancel();
@@ -631,9 +616,9 @@ public class MapActivity extends Activity
 										showProgressLoadData();
 									} else {
 										Toast.makeText(getApplicationContext(), 
-												"Keine Internetverbindung " +
-												"verfügbar.", 
-												Toast.LENGTH_LONG).show();
+											getResources()
+											.getText(R.string.no_network), 
+											Toast.LENGTH_LONG).show();
 									}
 								}
 							}
@@ -742,13 +727,13 @@ public class MapActivity extends Activity
 		switch(topic_id) {
 		case 1:
 			tv_title.setText(TOPICS[0]);
-			btn_change_topic.setText("ändern");
+			btn_change_topic.setText(R.string.change);
 			spinner.setVisibility(View.VISIBLE);
 //			btn_example.setVisibility(View.VISIBLE);
 			break;
 		case 2:
 			tv_title.setText(TOPICS[1]);
-			btn_change_topic.setText("ändern");
+			btn_change_topic.setText(R.string.change);
 			spinner.setVisibility(View.INVISIBLE);
 			btn_example.setVisibility(View.INVISIBLE);
 			break;
@@ -774,7 +759,7 @@ public class MapActivity extends Activity
 		mapview.getOverlays().remove(path_overlay);
 		mapview.invalidate();
 		tv_title.setText("");
-		btn_change_topic.setText("Themenroute wählen");
+		btn_change_topic.setText(R.string.choose_topic);
 		spinner.setVisibility(View.INVISIBLE);
 	}
 	
@@ -924,9 +909,8 @@ public class MapActivity extends Activity
 								showProgressLoadData();
 							} else {
 								Toast.makeText(getApplicationContext(), 
-										"Keine Internetverbindung " +
-										"verfügbar.", 
-										Toast.LENGTH_LONG).show();
+									getResources().getText(R.string.no_network), 
+									Toast.LENGTH_LONG).show();
 							}
 						}
 					} 

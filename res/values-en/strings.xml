@@ -17,12 +17,12 @@
     <string name="description">Description:</string>
     <string name="distribution">Distribution and Habitat:</string>
     <string name="things_to_know">Fascinating Facts:</string>
-    <string name="change_topic_default">select</string>
+    <string name="change_topic_default">choose</string>
     <string name="about_text">Diese Anwendung ist im Rahmen einer 
     Bachelorarbeit am Institut f&#252;r Geoinformatik und Fernerkundung der 
     Universit&#228;t Osnabr&#252;ck entstanden.</string>
     <string name="about_text2">Entwickelt von: Nina Manzke</string>
-    <string name="help_q1">How do I use the App?</string>
+    <string name="help_q1">How do I use this app?</string>
     <string name="help_q2">Why is my location not displayed?</string>
     <string name="help_q3">Why are there no animals shown on the map?</string>
     <string name="help_q4">How can I get information about the animals?</string>
@@ -62,8 +62,8 @@
     automatisch drehen\" den Haken entfernst.</string>
     <string name="themenrouten">Route Topics</string>
     <string name="no_topic">No Topic</string>
-    <string name="topics_submit">Start</string>
-    <string name="topics_cancel">Cancel</string>
+    <string name="submit">Start</string>
+    <string name="cancel">Cancel</string>
     <string name="about_title">Information</string>
     <string name="about_version">Version 1.0</string>
     <string name="about_copyright">&#169; Nina Manzke 2012</string>
@@ -72,5 +72,23 @@
     <string name="about_igf">Developed at the Institute for Geoinformatics and 
                             Remote Sensing at the University of Osnabrueck.</string>
     <string name="about_igfurl">www.igf.uni-osnabrueck.de</string>
-    <string name="about_bugreport">Bugreport: </string>
+    <string name="about_bugreport">Bugreport: n.a.</string>
+    
+    <string name="dialog_wait_gps">Waiting for GPS...</string>
+    <string name="dialog_loading">Loading...</string>
+    <string name="dialog_loading_data">Loading data...</string>
+    <string name="dialog_no_gps">GPS is not activated</string>
+    <string name="dialog_gps_msg">Activate GPS to get your current position localised.</string>
+    <string name="dialog_set_gps">Activate GPS</string>
+    <string name="dialog_animal_info">Animal Info</string>
+    <string name="dialog_details">Details</string>
+    <string name="dialog_connect_error">Connecting error - the data could not be 
+                                        transported.</string>
+    <string name="dialog_exit">Exit Application</string>
+    <string name="dialog_exit_msg">Do you really want to quit the 
+        application?\nProgress will not be saved and get lost.</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="change">change</string>
+    <string name="choose_topic">choose route topic</string>
 </resources>

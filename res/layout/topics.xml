@@ -146,14 +146,14 @@
 			    <Button
 			        android:layout_width="wrap_content"
 			        android:layout_height="wrap_content"
-			        android:text="@string/topics_submit"
+			        android:text="@string/submit"
 			        android:onClick="submit" />
 			    
 			    <Button
 	                android:layout_width="wrap_content"
 	                android:layout_height="wrap_content"
 	                android:layout_marginLeft="10dip"
-	                android:text="@string/topics_cancel"
+	                android:text="@string/cancel"
 	                android:onClick="cancel" />
 			    
 		    </LinearLayout>

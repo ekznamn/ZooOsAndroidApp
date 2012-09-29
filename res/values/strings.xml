@@ -61,8 +61,8 @@
     automatisch drehen\" den Haken entfernst.</string>
     <string name="themenrouten">Themenrouten</string>
     <string name="no_topic">Kein Thema</string>
-    <string name="topics_submit">Start</string>
-    <string name="topics_cancel">Abbrechen</string>
+    <string name="submit">Start</string>
+    <string name="cancel">Abbrechen</string>
     <string name="about_title">Informationen</string>
     <string name="about_version">Version 1.0</string>
     <string name="about_copyright">&#169; Nina Manzke 2012</string>
@@ -71,5 +71,25 @@
     <string name="about_igf">Entwickelt am Institut für Geoinformatik und 
                              Fernerkundung der Universität Osnabrück.</string>
     <string name="about_igfurl">www.igf.uni-osnabrueck.de</string>
-    <string name="about_bugreport">Bugreport:</string>
+    <string name="about_bugreport">Bugreport: n.a.</string>
+    
+    <string name="dialog_wait_gps">Warte auf GPS...</string>
+    <string name="dialog_loading">Laden...</string>
+    <string name="dialog_loading_data">Daten werden geladen...</string>
+    <string name="dialog_no_gps">GPS ist deaktiviert</string>
+    <string name="dialog_gps_msg">Aktiviere GPS, damit dein aktueller Standort 
+        ermittelt werden kann.</string>
+    <string name="dialog_set_gps">GPS einstellen</string>
+    <string name="dialog_animal_info">Tier Info</string>
+    <string name="dialog_details">Details</string>
+    <string name="dialog_connect_error">Verbindungsfehler - Die Daten konnten 
+                                        nicht übertragen werden.</string>
+    <string name="dialog_exit">Anwendung verlassen</string>
+    <string name="dialog_exit_msg">Soll die Anwendung wirklich beendet werden?\n
+    Bisherige Fortschritte werden nicht gespeichert und gehen verloren.</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nein</string>
+    <string name="change">&#228;ndern</string>
+    <string name="choose_topic">Themenroute w&#228;hlen</string>
+    <string name="no_network">Keine Internetverbindung verf&#252;gbar.</string>
 </resources>
