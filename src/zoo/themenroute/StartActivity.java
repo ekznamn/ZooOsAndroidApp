@@ -82,16 +82,9 @@ public class StartActivity extends Activity {
 			final View checkbox = inflater.inflate(R.layout.welcome_dialog, 
 												   null);
 			dialog = new AlertDialog.Builder(this)
-					.setTitle("Willkommen im Zoo Osnabrück")
+					.setTitle(R.string.welcome)
 					
-					.setMessage("Zur Nutzung dieser App muss die GPS-Funktion "+ 
-								"des Smartphones eingeschaltet sein.\nEs kann "+
-								"einige Zeit dauern, bis der Standort " +
-								"ermittelt ist und in der Karte angezeigt " +
-								"wird.\nZu beachten ist, dass innerhalb von " +
-								"Gebäuden unter Umständen kein GPS-Signal " +
-								"empfangen werden kann und die Anwendung nur" +
-								" im Freien gut funktioniert.")
+					.setMessage(R.string.welcome_info)
 					.setView(checkbox)
 					.setCancelable(true)
 					.setPositiveButton("OK", 

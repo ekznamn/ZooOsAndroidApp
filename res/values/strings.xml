@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Zoo Osnabr&#252;ck</string>
+    <string name="welcome">Willkommen im Zoo Osnabr&#252;ck</string>
+    <string name="welcome_info">Zur Nutzung dieser App muss die GPS-Funktion des 
+    Smartphones eingeschaltet sein.\nEs kann einige Zeit dauern, bis der 
+    Standort ermittelt ist und in der Karte angezeigt wird.\nZu beachten ist, 
+    dass innerhalb von Gebäuden unter Umständen kein GPS-Signal empfangen werden 
+    kann und die Anwendung nur im Freien gut funktioniert.</string>
     <string name="no_welcome_message">Nachricht nicht mehr anzeigen</string>
     <string name="map_title_default"></string>
     <string name="menu_item_1">Hilfe</string>
     <string name="menu_item_2">Info</string>
     <string name="help_title">FAQs</string>
-    <string name="about_title">Impressum</string>
     <string name="animal_title">Details</string>
     <string name="description">Beschreibung:</string>
     <string name="distribution">Verbreitung und Lebensraum:</string>
     <string name="things_to_know">Wissenswertes:</string>
     <string name="change_topic_default">ausw&#228;hlen</string>
-    <string name="about_text1">Diese Anwendung ist im Rahmen einer 
+    <string name="about_text">Diese Anwendung ist im Rahmen einer 
     Bachelorarbeit am Institut f&#252;r Geoinformatik und Fernerkundung der 
     Universit&#228;t Osnabr&#252;ck entstanden.</string>
     <string name="about_text2">Entwickelt von: Nina Manzke</string>
-    <string name="about_version">Version 1.0</string>
     <string name="help_q1">Wie benutze ich diese App?</string>
     <string name="help_q2">Warum wird mein Standort nicht angezeigt?</string>
     <string name="help_q3">Warum werden keine Tiere auf der Karte angezeigt?</string>
@@ -59,4 +63,13 @@
     <string name="no_topic">Kein Thema</string>
     <string name="topics_submit">Start</string>
     <string name="topics_cancel">Abbrechen</string>
+    <string name="about_title">Informationen</string>
+    <string name="about_version">Version 1.0</string>
+    <string name="about_copyright">&#169; Nina Manzke 2012</string>
+    <string name="about_osm">Karte &#169; OpenStreetMap Mitwirkende - Lizenz</string>
+    <string name="about_text1">Alle Angaben ohne Gewähr.</string>
+    <string name="about_igf">Entwickelt am Institut für Geoinformatik und 
+                             Fernerkundung der Universität Osnabrück.</string>
+    <string name="about_igfurl">www.igf.uni-osnabrueck.de</string>
+    <string name="about_bugreport">Bugreport:</string>
 </resources>

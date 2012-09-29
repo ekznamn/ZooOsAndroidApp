@@ -7,22 +7,101 @@
     
     <TextView
         style="@style/title_bar"
-        android:text="@string/menu_item_2" />
+        android:text="@string/about_title" />
     
-    <TextView
-        style="@style/text_area"
-        android:text="@string/about_version"
-        android:layout_marginTop="10dip" />
-    
-    <View   
-        style="@style/divider" />
-    
-    <TextView
-        style="@style/text_area"
-        android:text="@string/about_text1" />
-    
-    <TextView
-        style="@style/text_area"
-        android:text="@string/about_text2" />
-    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:orientation="vertical" >
+            
+            <TextView
+                android:text="@string/about_version"
+                style="@style/text_small"
+                android:layout_marginTop="10dip" />
+            
+            <TextView
+                android:text="@string/about_copyright"
+                style="@style/text_small"
+                android:layout_marginTop="18dip" />
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:orientation="horizontal"
+                android:paddingTop="20dip">
+                
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/igf_logo"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginBottom="5dip"
+                    android:layout_gravity="center" />
+                
+                <TextView
+                    android:id="@+id/about_igf"
+                    android:text="@string/about_igf"
+                    style="@style/text_small"
+                    android:layout_marginTop="5dip" />
+                
+            </LinearLayout>
+            
+            <TextView
+                android:id="@+id/about_igfurl"
+                android:text="@string/about_igfurl"
+                style="@style/text_small"
+                android:textSize="13sp" />
+            
+            <TextView
+                android:text="@string/about_bugreport"
+                style="@style/text_small"
+                android:textSize="12sp"
+                android:layout_marginTop="18dip" />
+            
+            <TextView
+                android:id="@+id/about_osm"
+                android:text="@string/about_osm"
+                style="@style/text_small"
+                android:layout_marginTop="12dip"
+                android:textSize="13sp" />
+            
+            <TextView
+                android:text="@string/about_text1"
+                style="@style/text_small"
+                android:layout_marginTop="0dip"
+                android:textSize="13sp" />
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+<!-- 		    <TextView -->
+<!-- 		        style="@style/text_small" -->
+<!-- 		        android:text="@string/about_version" -->
+<!-- 		        android:layout_marginTop="10dip" /> -->
+		    
+<!-- 		    <View    -->
+<!-- 		        style="@style/divider" /> -->
+		    
+<!-- 		    <TextView -->
+<!-- 		        style="@style/text_small" -->
+<!-- 		        android:text="@string/about_text1" /> -->
+		    
+<!-- 		    <TextView -->
+<!-- 		        style="@style/text_small" -->
+<!-- 		        android:text="@string/about_text2" /> -->
+		    
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
