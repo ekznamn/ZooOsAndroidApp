@@ -7,7 +7,6 @@ import zoo.themenroute.R;
 
 import android.app.Activity;
 import android.graphics.Bitmap;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;

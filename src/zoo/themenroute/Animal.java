@@ -5,7 +5,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.osmdroid.util.GeoPoint;
 import org.osmdroid.views.overlay.OverlayItem;
-import zoo.themenroute.R;
 
 import android.graphics.drawable.Drawable;
 

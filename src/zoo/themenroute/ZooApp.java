@@ -5,7 +5,6 @@ import android.app.Application;
 import android.content.SharedPreferences;
 import android.view.View;
 import android.widget.CheckBox;
-import zoo.themenroute.R;
 
 /**
  * This class is used to save states during the lifetime of the application.

@@ -1,7 +1,6 @@
 
 package zoo.themenroute;
 
-import zoo.themenroute.R;
 
 /**
  * This is a custom <code>Exception</code> that is thrown if any exception in 

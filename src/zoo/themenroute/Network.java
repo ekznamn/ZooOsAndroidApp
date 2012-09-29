@@ -3,7 +3,6 @@ package zoo.themenroute;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
-import zoo.themenroute.R;
 
 /**
  * The <code>Network</code> class is used to check whether a network connection 
