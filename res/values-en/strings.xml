@@ -1,25 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Zoo Osnabr&#252;ck</string>
-    <string name="no_welcome_message">Don't show message again</string>
+    <string name="welcome">Welcome to Zoo Osnabr&#252;ck</string>
+    <string name="welcome_info">
+    The GPS function of your device has to be turned on to use the app properly.
+    \nThe localisation could take some time, so wait a few minutes until your 
+    location is shown on the map.\nNormally, there is no GPS signal in the 
+    inside of buildings. It is recommended to use the application only outdoor. 
+    </string>
+    <string name="no_welcome_message">Do not show message again</string>
     <string name="map_title_default"></string>
     <string name="menu_item_1">Help</string>
     <string name="menu_item_2">Info</string>
     <string name="help_title">FAQs</string>
-    <string name="about_title">About</string>
     <string name="animal_title">Details</string>
     <string name="description">Description:</string>
     <string name="distribution">Distribution and Habitat:</string>
     <string name="things_to_know">Fascinating Facts:</string>
     <string name="change_topic_default">select</string>
-    <string name="about_text1">Diese Anwendung ist im Rahmen einer 
+    <string name="about_text">Diese Anwendung ist im Rahmen einer 
     Bachelorarbeit am Institut f&#252;r Geoinformatik und Fernerkundung der 
     Universit&#228;t Osnabr&#252;ck entstanden.</string>
     <string name="about_text2">Entwickelt von: Nina Manzke</string>
-    <string name="about_version">Version 1.0</string>
     <string name="help_q1">How do I use the App?</string>
     <string name="help_q2">Why is my location not displayed?</string>
-    <string name="help_q3">Why aren't there any animals shown on the map?</string>
+    <string name="help_q3">Why are there no animals shown on the map?</string>
     <string name="help_q4">How can I get information about the animals?</string>
     <string name="help_q5">If I turn around the device, all settings get lost.</string>
     <string name="help_a1">1. Stelle sicher, dass GPS auf deinem Handy 
@@ -59,4 +64,13 @@
     <string name="no_topic">No Topic</string>
     <string name="topics_submit">Start</string>
     <string name="topics_cancel">Cancel</string>
+    <string name="about_title">Information</string>
+    <string name="about_version">Version 1.0</string>
+    <string name="about_copyright">&#169; Nina Manzke 2012</string>
+    <string name="about_osm">Map &#169; OpenStreetMap Contributors - License</string>
+    <string name="about_text1">All information without guarantee.</string>
+    <string name="about_igf">Developed at the Institute for Geoinformatics and 
+                            Remote Sensing at the University of Osnabrueck.</string>
+    <string name="about_igfurl">www.igf.uni-osnabrueck.de</string>
+    <string name="about_bugreport">Bugreport: </string>
 </resources>
