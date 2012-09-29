@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        style="@style/title_bar"
+        android:text="@string/menu_item_2" />
+    
+    <TextView
+        style="@style/text_area"
+        android:text="@string/about_version"
+        android:layout_marginTop="10dip" />
+    
+    <View   
+        style="@style/divider" />
+    
+    <TextView
+        style="@style/text_area"
+        android:text="@string/about_text1" />
+    
+    <TextView
+        style="@style/text_area"
+        android:text="@string/about_text2" />
+    
+</LinearLayout>

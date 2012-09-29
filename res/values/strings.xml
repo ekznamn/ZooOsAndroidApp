@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Zoo Osnabr&#252;ck</string>
+    <string name="no_welcome_message">Nachricht nicht mehr anzeigen</string>
+    <string name="map_title_default"></string>
+    <string name="menu_item_1">Hilfe</string>
+    <string name="menu_item_2">Info</string>
+    <string name="help_title">FAQs</string>
+    <string name="about_title">Impressum</string>
+    <string name="animal_title">Details</string>
+    <string name="description">Beschreibung:</string>
+    <string name="distribution">Verbreitung und Lebensraum:</string>
+    <string name="things_to_know">Wissenswertes:</string>
+    <string name="change_topic_default">ausw&#228;hlen</string>
+    <string name="about_text1">Diese Anwendung ist im Rahmen einer 
+    Bachelorarbeit am Institut f&#252;r Geoinformatik und Fernerkundung der 
+    Universit&#228;t Osnabr&#252;ck entstanden.</string>
+    <string name="about_text2">Entwickelt von: Nina Manzke</string>
+    <string name="about_version">Version 1.0</string>
+    <string name="help_q1">Wie benutze ich diese App?</string>
+    <string name="help_q2">Warum wird mein Standort nicht angezeigt?</string>
+    <string name="help_q3">Warum werden keine Tiere auf der Karte angezeigt?</string>
+    <string name="help_q4">Wie bekomme ich Informationen zu den Tieren?</string>
+    <string name="help_q5">Wenn ich das Handy drehe, gehen alle Einstellungen verloren.</string>
+    <string name="help_a1">1. Stelle sicher, dass GPS auf deinem Handy 
+    eingeschaltet ist, damit dein Standort ermittelt werden kann.\n\n2. W&#228;hle 
+    ein Thema f&#252;r eine Route im Zoo aus, indem du auf den Ausw&#228;hlen-Button in 
+    der Titelleiste tippst.\n\n3. Jetzt kann es los gehen. Wenn dein Standort 
+    und die ausgew&#228;hlte Route auf der Karte angezeigt werden, mache dich auf 
+    den Weg zu der Route.
+    \n\n4. W&#228;hrend du die Route abl&#228;ufst, reagiert die App immer dann, wenn du 
+    dich einem Tier n&#228;herst, das zu dem Thema der Route geh&#246;rt. Dann kannst du 
+    zu diesem Tier interessante Details abrufen.\n\n5. Du kannst jederzeit eine 
+    andere Themenroute ausw&#228;hlen, indem du auf den &#196;ndern-Button tippst. 
+    Beachte jedoch, dass der Fortschritt der alten Route nicht gespeichert wird.</string>
+    <string name="help_a2">&#220;berpr&#252;fe deine Standorteinstellungen. Damit dein 
+    Standort angezeigt werden kann, muss GPS eingeschaltet sein.\nBei der 
+    Standortermittlung mit GPS kann es eine Weile dauern, bis dein Ger&#228;t ein 
+    Signal empf&#228;ngt. Wichtig ist, dass du dich unter freiem Himmel befindest 
+    und nicht in Geb&#228;uden. Auch ein zu dichtes Bl&#228;tterdach kann zu l&#228;ngeren 
+    Wartezeiten f&#252;hren. Manchmal ist ein wenig Geduld erforderlich.</string>
+    <string name="help_a3">Der Standort von den Tieren wird auf der Karte erst 
+    sichtbar, wenn du mit deinem Handy in die N&#228;he ihres Geheges kommst. Daf&#252;r 
+    kannst du einfach der Route folgen, die in der Karte angezeigt wird.\nDa 
+    dein Standort nicht immer auf den Meter genau ermittelt werden kann, 
+    kann es sein, dass du dich bereits an dem Gehege befindest, die App aber 
+    noch nicht reagiert hat. Bewege dich einfach noch ein St&#252;ckchen weiter, 
+    bis das n&#228;chste Tier angezeigt wird.
+    </string>
+    <string name="help_a4">Informationen zu den Tieren auf deiner gew&#228;hlten 
+    Route kannst du jederzeit abrufen, indem du den entsprechenden Marker auf 
+    der Karte antippst. Vorraussetzung ist aber, dass du bereits an dem Gehege 
+    des Tieres vorbeigekommen bist, denn sonst befindet sich noch kein Marker 
+    auf der Karte.</string>
+    <string name="help_a5">Dieses Problem kann vermieden werden, 
+    indem du in den Einstellungen deines Handys unter \"Anzeige\"->\"Display 
+    automatisch drehen\" den Haken entfernst.</string>
+    <string name="themenrouten">Themenrouten</string>
+    <string name="no_topic">Kein Thema</string>
+    <string name="topics_submit">Start</string>
+    <string name="topics_cancel">Abbrechen</string>
+</resources>

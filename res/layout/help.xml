@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical" >
+    
+    <TextView
+        style="@style/title_bar"
+        android:text="@string/help_title" />
+    
+    <ScrollView
+        android:layout_below="@id/animal_title"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:orientation="vertical" >
+            
+		    <TextView
+		        style="@style/h2"
+		        android:text="@string/help_q1" />
+		    
+		    <View   
+		        style="@style/divider" />
+		    
+		    <TextView
+		        style="@style/text_area"
+		        android:text="@string/help_a1" />
+		    
+		    <TextView
+		        style="@style/h2"
+		        android:text="@string/help_q2" />
+		    
+		    <View   
+		        style="@style/divider" />
+		    
+		    <TextView
+		        style="@style/text_area"
+		        android:text="@string/help_a2" />
+		    
+		    <TextView
+		        style="@style/h2"
+		        android:text="@string/help_q3" />
+		    
+		    <View   
+		        style="@style/divider" />
+		    
+		    <TextView
+		        style="@style/text_area"
+		        android:text="@string/help_a3" />
+		    
+		    <TextView
+		        style="@style/h2"
+		        android:text="@string/help_q4" />
+		    
+		    <View   
+		        style="@style/divider" />
+		    
+		    <TextView
+		        style="@style/text_area"
+		        android:text="@string/help_a4" />
+		    
+		    <TextView
+                style="@style/h2"
+                android:text="@string/help_q5" />
+		    
+            <View   
+                style="@style/divider" />
+            
+            <TextView
+                style="@style/text_area"
+                android:text="@string/help_a5" />
+            
+        </LinearLayout>
+        
+    </ScrollView>
+    
+</LinearLayout>
