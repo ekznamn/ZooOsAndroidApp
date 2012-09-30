@@ -135,9 +135,12 @@ public class MapActivity extends Activity
 		pa_handler = ProximityAlertHandler.getInstance();
 		img_handler = new ImageHandler();
 		
-		language = getResources().getConfiguration().locale.getDisplayName();
-		
-		
+		String lang = getResources().getConfiguration().locale.toString();
+		if (lang.startsWith("de")) {
+			language = "de";
+		} else {
+			language = "en";
+		}
 		
 		//TODO ---------- nur zum Test -------------------------------------
 //		btn_example = (Button) findViewById(R.id.btn_example);
@@ -464,8 +467,9 @@ public class MapActivity extends Activity
 //    			CopyOfHTTPRequestHandler http = new CopyOfHTTPRequestHandler();
     			HTTPRequestHandler http = new HTTPRequestHandler();
     			try {
-    				animal_data = http.sendGet("alt/get_animals.php?topic_id=" 
-    											+ topic_id);
+    				animal_data = http.sendGet("alt/get_animals.php?" +
+    										   "topic_id=" + topic_id +
+    										   "&lang=" + language);
     			} catch (HTTPRequestException e) {
     				topic_id = -1;
     				e.printStackTrace();

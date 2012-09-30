@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Zoo Osnabr&#252;ck</string>
-    <string name="welcome">Willkommen im Zoo Osnabr&#252;ck</string>
-    <string name="welcome_info">Zur Nutzung dieser App muss die GPS-Funktion des 
-    Smartphones eingeschaltet sein.\nEs kann einige Zeit dauern, bis der 
-    Standort ermittelt ist und in der Karte angezeigt wird.\nZu beachten ist, 
-    dass innerhalb von Gebäuden unter Umständen kein GPS-Signal empfangen werden 
-    kann und die Anwendung nur im Freien gut funktioniert.</string>
-    <string name="no_welcome_message">Nachricht nicht mehr anzeigen</string>
+    <string name="welcome">Welcome to Zoo Osnabr&#252;ck</string>
+    <string name="welcome_info">
+    The GPS function of your device has to be turned on to use the app properly.
+    \nThe localisation could take some time, so wait a few minutes until your 
+    location is shown on the map.\nNormally, there is no GPS signal in the 
+    inside of buildings. It is recommended to use the application only outdoor. 
+    </string>
+    <string name="no_welcome_message">Do not show message again</string>
     <string name="map_title_default"></string>
-    <string name="menu_item_1">Hilfe</string>
+    <string name="menu_item_1">Help</string>
     <string name="menu_item_2">Info</string>
     <string name="help_title">FAQs</string>
     <string name="animal_title">Details</string>
-    <string name="description">Beschreibung:</string>
-    <string name="distribution">Verbreitung und Lebensraum:</string>
-    <string name="things_to_know">Wissenswertes:</string>
-    <string name="change_topic_default">ausw&#228;hlen</string>
-    <string name="help_q1">Wie benutze ich diese App?</string>
-    <string name="help_q2">Warum wird mein Standort nicht angezeigt?</string>
-    <string name="help_q3">Warum werden keine Tiere auf der Karte angezeigt?</string>
-    <string name="help_q4">Wie bekomme ich Informationen zu den Tieren?</string>
-    <string name="help_q5">Wenn ich das Handy drehe, gehen alle Einstellungen verloren.</string>
+    <string name="description">Description:</string>
+    <string name="distribution">Distribution and Habitat:</string>
+    <string name="things_to_know">Fascinating Facts:</string>
+    <string name="change_topic_default">choose</string>
+    <string name="help_q1">How do I use this app?</string>
+    <string name="help_q2">Why is my location not displayed?</string>
+    <string name="help_q3">Why are there no animals shown on the map?</string>
+    <string name="help_q4">How can I get information about the animals?</string>
+    <string name="help_q5">If I turn around the device, all settings get lost.</string>
     <string name="help_a1">1. Stelle sicher, dass GPS auf deinem Handy 
     eingeschaltet ist, damit dein Standort ermittelt werden kann.\n\n2. W&#228;hle 
     ein Thema f&#252;r eine Route im Zoo aus, indem du auf den Ausw&#228;hlen-Button in 
@@ -55,38 +56,36 @@
     <string name="help_a5">Dieses Problem kann vermieden werden, 
     indem du in den Einstellungen deines Handys unter \"Anzeige\"->\"Display 
     automatisch drehen\" den Haken entfernst.</string>
-    <string name="themenrouten">Themenrouten</string>
-    <string name="no_topic">Kein Thema</string>
+    <string name="themenrouten">Route Topics</string>
+    <string name="no_topic">No Topic</string>
     <string name="submit">Start</string>
-    <string name="cancel">Abbrechen</string>
-    <string name="about_title">Informationen</string>
+    <string name="cancel">Cancel</string>
+    <string name="about_title">Information</string>
     <string name="about_version">Version 1.0</string>
     <string name="about_copyright">&#169; Nina Manzke 2012</string>
-    <string name="about_osm">Karte &#169; OpenStreetMap - Lizenz</string>
-    <string name="about_text1">Alle Angaben ohne Gewähr.</string>
-    <string name="about_igf">Entwickelt am Institut für Geoinformatik und 
-                             Fernerkundung der Universität Osnabrück.</string>
+    <string name="about_osm">Map &#169; OpenStreetMap - Terms</string>
+    <string name="about_text1">All information without guarantee.</string>
+    <string name="about_igf">Developed at the Institute for Geoinformatics and 
+                            Remote Sensing at the University of Osnabrueck.</string>
     <string name="about_igfurl">www.igf.uni-osnabrueck.de</string>
     <string name="about_bugreport">Bugreport: zooos.android@gmail.com</string>
-    <string name="about_zoowiso">Tier-Daten bereitgestellt durch </string>
+    <string name="about_zoowiso">Animal data offered by </string>
     
-    <string name="dialog_wait_gps">Warte auf GPS...</string>
-    <string name="dialog_loading">Laden...</string>
-    <string name="dialog_loading_data">Daten werden geladen...</string>
-    <string name="dialog_no_gps">GPS ist deaktiviert</string>
-    <string name="dialog_gps_msg">Aktiviere GPS, damit dein aktueller Standort 
-        ermittelt werden kann.</string>
-    <string name="dialog_set_gps">GPS einstellen</string>
-    <string name="dialog_animal_info">Tier Info</string>
+    <string name="dialog_wait_gps">Waiting for GPS...</string>
+    <string name="dialog_loading">Loading...</string>
+    <string name="dialog_loading_data">Loading data...</string>
+    <string name="dialog_no_gps">GPS is not activated</string>
+    <string name="dialog_gps_msg">Activate GPS to get your current position localised.</string>
+    <string name="dialog_set_gps">Activate GPS</string>
+    <string name="dialog_animal_info">Animal Info</string>
     <string name="dialog_details">Details</string>
-    <string name="dialog_connect_error">Verbindungsfehler - Die Daten konnten 
-                                        nicht übertragen werden.</string>
-    <string name="dialog_exit">Anwendung verlassen</string>
-    <string name="dialog_exit_msg">Soll die Anwendung wirklich beendet 
-        werden?\nBisherige Fortschritte werden nicht gespeichert und gehen verloren.</string>
-    <string name="yes">Ja</string>
-    <string name="no">Nein</string>
-    <string name="change">&#228;ndern</string>
-    <string name="choose_topic">Themenroute w&#228;hlen</string>
-    <string name="no_network">Keine Internetverbindung verf&#252;gbar.</string>
+    <string name="dialog_connect_error">Connecting error - the data could not be 
+                                        transported.</string>
+    <string name="dialog_exit">Exit Application</string>
+    <string name="dialog_exit_msg">Do you really want to quit the 
+        application?\nProgress will not be saved and get lost.</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="change">change</string>
+    <string name="choose_topic">choose route topic</string>
 </resources>
