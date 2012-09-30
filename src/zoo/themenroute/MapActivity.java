@@ -109,6 +109,7 @@ public class MapActivity extends Activity
 	private String					curr_animal_name;
 	private String					curr_animal_all;
 	private String 					curr_animal_id = "";
+	private String					language = "";
 	private String 					topics = null;
 	private int						radius = 35;
 	
@@ -133,6 +134,8 @@ public class MapActivity extends Activity
 		
 		pa_handler = ProximityAlertHandler.getInstance();
 		img_handler = new ImageHandler();
+		
+		language = getResources().getConfiguration().locale.getDisplayName();
 		
 		
 		
