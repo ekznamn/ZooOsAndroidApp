@@ -17,10 +17,6 @@
     <string name="distribution">Verbreitung und Lebensraum:</string>
     <string name="things_to_know">Wissenswertes:</string>
     <string name="change_topic_default">ausw&#228;hlen</string>
-    <string name="about_text">Diese Anwendung ist im Rahmen einer 
-    Bachelorarbeit am Institut f&#252;r Geoinformatik und Fernerkundung der 
-    Universit&#228;t Osnabr&#252;ck entstanden.</string>
-    <string name="about_text2">Entwickelt von: Nina Manzke</string>
     <string name="help_q1">Wie benutze ich diese App?</string>
     <string name="help_q2">Warum wird mein Standort nicht angezeigt?</string>
     <string name="help_q3">Warum werden keine Tiere auf der Karte angezeigt?</string>
@@ -66,12 +62,13 @@
     <string name="about_title">Informationen</string>
     <string name="about_version">Version 1.0</string>
     <string name="about_copyright">&#169; Nina Manzke 2012</string>
-    <string name="about_osm">Karte &#169; OpenStreetMap Mitwirkende - Lizenz</string>
+    <string name="about_osm">Karte &#169; OpenStreetMap - Lizenz</string>
     <string name="about_text1">Alle Angaben ohne Gewähr.</string>
     <string name="about_igf">Entwickelt am Institut für Geoinformatik und 
                              Fernerkundung der Universität Osnabrück.</string>
     <string name="about_igfurl">www.igf.uni-osnabrueck.de</string>
-    <string name="about_bugreport">Bugreport: n.a.</string>
+    <string name="about_bugreport">Bugreport: zooos.android@gmail.com</string>
+    <string name="about_zoowiso">Tier-Daten bereitgestellt durch </string>
     
     <string name="dialog_wait_gps">Warte auf GPS...</string>
     <string name="dialog_loading">Laden...</string>
@@ -85,8 +82,8 @@
     <string name="dialog_connect_error">Verbindungsfehler - Die Daten konnten 
                                         nicht übertragen werden.</string>
     <string name="dialog_exit">Anwendung verlassen</string>
-    <string name="dialog_exit_msg">Soll die Anwendung wirklich beendet werden?\n
-    Bisherige Fortschritte werden nicht gespeichert und gehen verloren.</string>
+    <string name="dialog_exit_msg">Soll die Anwendung wirklich beendet 
+        werden?\nBisherige Fortschritte werden nicht gespeichert und gehen verloren.</string>
     <string name="yes">Ja</string>
     <string name="no">Nein</string>
     <string name="change">&#228;ndern</string>

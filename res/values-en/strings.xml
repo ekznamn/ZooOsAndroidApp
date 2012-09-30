@@ -18,10 +18,6 @@
     <string name="distribution">Distribution and Habitat:</string>
     <string name="things_to_know">Fascinating Facts:</string>
     <string name="change_topic_default">choose</string>
-    <string name="about_text">Diese Anwendung ist im Rahmen einer 
-    Bachelorarbeit am Institut f&#252;r Geoinformatik und Fernerkundung der 
-    Universit&#228;t Osnabr&#252;ck entstanden.</string>
-    <string name="about_text2">Entwickelt von: Nina Manzke</string>
     <string name="help_q1">How do I use this app?</string>
     <string name="help_q2">Why is my location not displayed?</string>
     <string name="help_q3">Why are there no animals shown on the map?</string>
@@ -67,12 +63,13 @@
     <string name="about_title">Information</string>
     <string name="about_version">Version 1.0</string>
     <string name="about_copyright">&#169; Nina Manzke 2012</string>
-    <string name="about_osm">Map &#169; OpenStreetMap Contributors - License</string>
+    <string name="about_osm">Map &#169; OpenStreetMap - Terms</string>
     <string name="about_text1">All information without guarantee.</string>
     <string name="about_igf">Developed at the Institute for Geoinformatics and 
                             Remote Sensing at the University of Osnabrueck.</string>
     <string name="about_igfurl">www.igf.uni-osnabrueck.de</string>
-    <string name="about_bugreport">Bugreport: n.a.</string>
+    <string name="about_bugreport">Bugreport: zooos.android@gmail.com</string>
+    <string name="about_zoowiso">Animal data offered by </string>
     
     <string name="dialog_wait_gps">Waiting for GPS...</string>
     <string name="dialog_loading">Loading...</string>

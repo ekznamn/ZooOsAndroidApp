@@ -65,8 +65,8 @@
                 android:layout_marginTop="18dip" />
             
             <TextView
-                android:id="@+id/about_osm"
-                android:text="@string/about_osm"
+                android:id="@+id/about_zoowiso"
+                android:text="@string/about_zoowiso"
                 style="@style/text_small"
                 android:layout_marginTop="12dip"
                 android:textSize="13sp" />
@@ -77,31 +77,14 @@
                 android:layout_marginTop="0dip"
                 android:textSize="13sp" />
             
+            <TextView
+                android:id="@+id/about_osm"
+                android:text="@string/about_osm"
+                style="@style/text_small"
+                android:layout_marginTop="12dip"
+                android:textSize="13sp" />
             
-            
-            
-            
-            
-            
-            
-            
-            
-<!-- 		    <TextView -->
-<!-- 		        style="@style/text_small" -->
-<!-- 		        android:text="@string/about_version" -->
-<!-- 		        android:layout_marginTop="10dip" /> -->
-		    
-<!-- 		    <View    -->
-<!-- 		        style="@style/divider" /> -->
-		    
-<!-- 		    <TextView -->
-<!-- 		        style="@style/text_small" -->
-<!-- 		        android:text="@string/about_text1" /> -->
-		    
-<!-- 		    <TextView -->
-<!-- 		        style="@style/text_small" -->
-<!-- 		        android:text="@string/about_text2" /> -->
-		    
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
