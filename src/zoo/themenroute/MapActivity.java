@@ -110,6 +110,7 @@ public class MapActivity extends Activity
 	private String					curr_animal_all;
 	private String 					curr_animal_id = "";
 	private String					language = "";
+	private String 					topic = "";
 	private String 					topics = null;
 	private int						radius = 35;
 	
@@ -147,10 +148,10 @@ public class MapActivity extends Activity
 		spinner = (Spinner) findViewById(R.id.spinner);
 		ArrayAdapter<String> s_adapter = new ArrayAdapter<String>(
 				this, android.R.layout.simple_spinner_item, 
-				new String[]{"Warzenschwein", "Weißscheitelmangabe", 
-				"Mantelpavian", "Zebramanguste", "Hausesel", "Pinselohrschwein",
-				"Großer Kudu", "Goldschakal", "Serval", "Schimpanse", 
-				"Tüpfelhyäne", "Afrikanische Zwergziege"});
+				new String[]{"1", "2", 
+				"3", "4", "5", "6",
+				"7", "8", "9", "10", 
+				"11", "12"});
 		s_adapter.setDropDownViewResource(
 	    		android.R.layout.simple_spinner_dropdown_item);
 		spinner.setAdapter(s_adapter);
@@ -420,7 +421,7 @@ public class MapActivity extends Activity
     			
     			HTTPRequestHandler http = new HTTPRequestHandler();
     			try {
-    				topics = http.sendGet("get_topics.php");
+    				topics = http.sendGet("get_topics.php?lang=" + language);
     			} catch (HTTPRequestException e) {
     				Log.e("Download Error", "-------------");
     			}
@@ -467,7 +468,8 @@ public class MapActivity extends Activity
 //    			CopyOfHTTPRequestHandler http = new CopyOfHTTPRequestHandler();
     			HTTPRequestHandler http = new HTTPRequestHandler();
     			try {
-    				animal_data = http.sendGet("alt/get_animals.php?" +
+    				String data_path = http.getDataPath();
+    				animal_data = http.sendGet(data_path + "get_animals.php?" +
     										   "topic_id=" + topic_id +
     										   "&lang=" + language);
     			} catch (HTTPRequestException e) {
@@ -684,7 +686,13 @@ public class MapActivity extends Activity
 		
 		try {
 			switch(topic_id) {
-			case 1: case 2:
+			
+			case -1:
+				ja_items = new JSONArray();
+				mapview.getOverlays().remove(path_overlay);
+				break;
+				
+			default:
 				
 				ja_items = new JSONArray(prox_alerts);	
 				ja_route = ja_items.getJSONObject(ja_items.length()-1)
@@ -697,10 +705,6 @@ public class MapActivity extends Activity
 							 	 coord_pair.getDouble(0)));
 				}
 				replacePathOverlay(path_points);
-				break;
-			default:
-				ja_items = new JSONArray();
-				mapview.getOverlays().remove(path_overlay);
 				break;
 			}
 			pa_handler.replaceProximityAlerts(location_manager, 
@@ -730,29 +734,41 @@ public class MapActivity extends Activity
 	 * handle the button text. 
 	 */
 	private void updateTopic() {
-		
-		switch(topic_id) {
-		case 1:
-			tv_title.setText(TOPICS[0]);
+		// TODO
+		if (topic_id == -1) {
+			clearTopic();
+		} else {
+			tv_title.setText(topic);
 			btn_change_topic.setText(R.string.change);
 			spinner.setVisibility(View.VISIBLE);
-//			btn_example.setVisibility(View.VISIBLE);
-			break;
-		case 2:
-			tv_title.setText(TOPICS[1]);
-			btn_change_topic.setText(R.string.change);
-			spinner.setVisibility(View.INVISIBLE);
-			btn_example.setVisibility(View.INVISIBLE);
-			break;
-		case 3:
-			clearTopic();
-			spinner.setVisibility(View.INVISIBLE);
-			btn_example.setVisibility(View.INVISIBLE);
-			break;
-		default:
-			clearTopic();
-			break;
 		}
+		
+//		switch(topic_id) {
+//		case 1:
+////			tv_title.setText(TOPICS[0]);
+//			tv_title.setText(topic);
+//			btn_change_topic.setText(R.string.change);
+//			spinner.setVisibility(View.VISIBLE);
+////			btn_example.setVisibility(View.VISIBLE);
+//			break;
+//		case 2:
+////			tv_title.setText(TOPICS[1]);
+//			tv_title.setText(topic);
+//			btn_change_topic.setText(R.string.change);
+//			spinner.setVisibility(View.VISIBLE);
+////			btn_example.setVisibility(View.INVISIBLE);
+//			break;
+//		case 3:
+////			clearTopic();
+//			tv_title.setText(topic);
+//			btn_change_topic.setText(R.string.change);
+//			spinner.setVisibility(View.VISIBLE);
+////			btn_example.setVisibility(View.INVISIBLE);
+//			break;
+//		default:
+//			clearTopic();
+//			break;
+//		}
 	}
 	
 	/**
@@ -900,9 +916,10 @@ public class MapActivity extends Activity
 		// check request- and result-code
 		if (request_code == 0) {
 			
-			if (intent != null && intent.hasExtra("topic")) {
+			if (intent != null && intent.hasExtra("topic_id")) {
 				
-				topic_id = intent.getExtras().getInt("topic");
+				topic_id = intent.getExtras().getInt("topic_id");
+				topic = intent.getExtras().getString("topic");
 				
 				if (result_code == RESULT_OK) {
 				

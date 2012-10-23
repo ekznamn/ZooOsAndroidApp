@@ -46,6 +46,7 @@ public class TopicsActivity extends Activity {
 	
 	
 	private int 		topic_id = -1;
+	private String 		topic = "";
 	
 	
 	/** 
@@ -200,6 +201,7 @@ public class TopicsActivity extends Activity {
 							
 							case R.id.topics_1: 
 								topic_id = ja_data.getJSONObject(0).getInt("id");
+								topic = ja_data.getJSONObject(0).getString("topic");
 								tv_t1.setVisibility(TextView.VISIBLE); 
 								tv_t2.setVisibility(TextView.GONE); 
 								tv_t3.setVisibility(TextView.GONE);
@@ -209,6 +211,7 @@ public class TopicsActivity extends Activity {
 								break;
 							case R.id.topics_2:
 								topic_id = ja_data.getJSONObject(1).getInt("id");
+								topic = ja_data.getJSONObject(1).getString("topic");
 								tv_t1.setVisibility(TextView.GONE); 
 								tv_t2.setVisibility(TextView.VISIBLE); 
 								tv_t3.setVisibility(TextView.GONE);
@@ -218,6 +221,7 @@ public class TopicsActivity extends Activity {
 								break;
 							case R.id.topics_3: 
 								topic_id = ja_data.getJSONObject(2).getInt("id");
+								topic = ja_data.getJSONObject(2).getString("topic");
 								tv_t1.setVisibility(TextView.GONE);
 								tv_t2.setVisibility(TextView.GONE);
 								tv_t3.setVisibility(TextView.VISIBLE);
@@ -227,6 +231,7 @@ public class TopicsActivity extends Activity {
 								break;
 							case R.id.topics_4:
 								topic_id = ja_data.getJSONObject(3).getInt("id");
+								topic = ja_data.getJSONObject(3).getString("topic");
 								tv_t1.setVisibility(TextView.GONE); 
 								tv_t2.setVisibility(TextView.GONE); 
 								tv_t3.setVisibility(TextView.GONE);
@@ -236,6 +241,7 @@ public class TopicsActivity extends Activity {
 								break;
 							case R.id.topics_5:
 								topic_id = ja_data.getJSONObject(4).getInt("id");
+								topic = ja_data.getJSONObject(4).getString("topic");
 								tv_t1.setVisibility(TextView.GONE); 
 								tv_t2.setVisibility(TextView.GONE); 
 								tv_t3.setVisibility(TextView.GONE);
@@ -245,6 +251,7 @@ public class TopicsActivity extends Activity {
 								break;
 							case R.id.topics_6: 
 								topic_id = ja_data.getJSONObject(5).getInt("id");
+								topic = ja_data.getJSONObject(5).getString("topic");
 								tv_t1.setVisibility(TextView.GONE); 
 								tv_t2.setVisibility(TextView.GONE); 
 								tv_t3.setVisibility(TextView.GONE);
@@ -257,7 +264,7 @@ public class TopicsActivity extends Activity {
 							Log.e("JSON Error", "Cannot read topic id from JSONArray");
 							
 							Intent intent = new Intent();
-							intent.putExtra("topic", MapActivity.LOAD_ERROR);
+							intent.putExtra("topic_id", MapActivity.LOAD_ERROR);
 							setResult(RESULT_CANCELED, intent);
 							TopicsActivity.this.finish();
 						}
@@ -268,7 +275,7 @@ public class TopicsActivity extends Activity {
 				Log.e("JSON Error", data);
 				
 				Intent intent = new Intent();
-				intent.putExtra("topic", MapActivity.LOAD_ERROR);
+				intent.putExtra("topic_id", MapActivity.LOAD_ERROR);
 				setResult(RESULT_CANCELED, intent);
 				TopicsActivity.this.finish();
 			}
@@ -282,7 +289,8 @@ public class TopicsActivity extends Activity {
 	public void submit(View view) {
 		
 		Intent intent = new Intent();
-		intent.putExtra("topic", topic_id);
+		intent.putExtra("topic_id", topic_id);
+		intent.putExtra("topic", topic);
 		setResult(RESULT_OK, intent);
 		TopicsActivity.this.finish();
 		

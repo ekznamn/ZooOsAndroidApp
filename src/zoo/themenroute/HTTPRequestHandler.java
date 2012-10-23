@@ -18,6 +18,7 @@ import org.apache.http.util.EntityUtils;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.util.Log;
 
 
 /**
@@ -42,6 +43,39 @@ public class HTTPRequestHandler {
     	
     	HttpParams params = new BasicHttpParams();
     	http_client = new DefaultHttpClient(params);
+    }
+    
+    public String getDataPath() throws HTTPRequestException {
+    	
+    	String data_path = "";
+    	
+    	 try {
+         	http_get = new HttpGet(URL + "data_path.php");  
+ 			response = http_client.execute(http_get);
+ 			data_path = EntityUtils.toString(response.getEntity());
+ 			data_path = data_path.trim();
+ 			
+ 		} catch (ClientProtocolException e) {
+ 			throw new HTTPRequestException("Ein Fehler ist aufgetreten, der " +
+ 			   							   "Server antwortet nicht.");
+ 		
+ 		} catch (UnsupportedEncodingException e) {
+ 			e.printStackTrace();
+ 			throw new HTTPRequestException("Kodierungsfehler.");
+ 			
+ 		} catch (IOException e) {
+ 			e.printStackTrace();
+ 			throw new HTTPRequestException("Bei der Datenübertragung ist ein " +
+ 			   							   "Fehler aufgetreten.");
+ 		} catch (Exception e) {
+ 			e.printStackTrace();
+ 			throw new HTTPRequestException(e.getMessage());
+ 			
+ 		} finally {
+ 			http_get.abort();
+ 		}
+ 		Log.e("################", data_path);
+ 		return data_path;
     }
     
     /**
